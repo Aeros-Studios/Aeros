@@ -846,7 +846,7 @@ public final class CraftServer implements Server {
 		KnockbackConfig.init((File) console.options.valueOf("knockback-settings"));
 
 		// Aeros start - config
-		AerosConfig.init((File) console.options.valueOf("windspigot-settings"));
+		AerosConfig.init((File) console.options.valueOf("aeros-settings"));
 		// Aeros end
 
 		for (WorldServer world : console.worlds) {

@@ -12,7 +12,7 @@ public class SpawnMobCommand extends Command {
 		super(name);
 		this.description = "Spawn mobs";
 		this.usageMessage = "/spawnmob <mob name> [amount]";
-		setPermission("windspigot.command.spawnmob");
+		setPermission("aeros.command.spawnmob");
 	}
 
 	public boolean execute(CommandSender sender, String commandLabel, String[] args) {

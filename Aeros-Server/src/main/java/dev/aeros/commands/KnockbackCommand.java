@@ -20,7 +20,7 @@ public class KnockbackCommand extends Command {
 	public KnockbackCommand(String name) {
 		super(name);
 		this.description = "Assists in knockback configuration.";
-		this.setPermission("windspigot.command.knockback");
+		this.setPermission("aeros.command.knockback");
 	}
 
 	@Override

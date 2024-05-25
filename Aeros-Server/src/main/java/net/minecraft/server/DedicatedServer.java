@@ -189,7 +189,7 @@ public class DedicatedServer extends MinecraftServer implements IMinecraftServer
 			KnockbackConfig.init((File) options.valueOf("knockback-settings"));
 
 			// Aeros start - config
-			AerosConfig.init((File) options.valueOf("windspigot-settings"));
+			AerosConfig.init((File) options.valueOf("aeros-settings"));
 			// Aeros end
 
 			this.a(new DedicatedPlayerList(this));
@@ -237,7 +237,7 @@ public class DedicatedServer extends MinecraftServer implements IMinecraftServer
 						DedicatedServer.LOGGER
 								.warn("---------------------------- Aeros Checker ----------------------------");
 						DedicatedServer.LOGGER.warn(
-								"If you don't want to see this message anymore, set \"settings.stop-notify-bungee\" to \"true\" in \"windspigot.yml\"!");
+								"If you don't want to see this message anymore, set \"settings.stop-notify-bungee\" to \"true\" in \"aeros.yml\"!");
 						DedicatedServer.LOGGER.warn("Checking firewall..");
 						try {
 							String external = IPUtils.getExternalAddress();

@@ -16,7 +16,7 @@ public class PingCommand extends Command {
 		super(name);
 		this.description = "Shows a player's ping";
 		this.usageMessage = "/ping";
-		this.setPermission("windspigot.command.ping");
+		this.setPermission("aeros.command.ping");
 	}
 
 	@Override

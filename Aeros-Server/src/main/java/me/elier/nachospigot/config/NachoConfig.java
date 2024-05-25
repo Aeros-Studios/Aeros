@@ -33,7 +33,7 @@ public class NachoConfig {
 	static YamlConfiguration config;
 	static int version;
 
-	// If the config has been migrated to windspigot.yml
+	// If the config has been migrated to aeros.yml
 	public static boolean hasMigrated = false;
 
 	public static void init(File configFile) {

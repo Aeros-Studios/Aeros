@@ -113,8 +113,8 @@ public class Main {
 						.describedAs("Yml file");
 				// NachoSpigot end
 				// Aeros start - config
-				acceptsAll(asList("windspigot", "windspigot-settings"), "File for windspigot settings").withRequiredArg()
-				.ofType(File.class).defaultsTo(new File("windspigot.yml")).describedAs("Yml file");
+				acceptsAll(asList("aeros", "aeros-settings"), "File for aeros settings").withRequiredArg()
+						.ofType(File.class).defaultsTo(new File("aeros.yml")).describedAs("Yml file");
 				// Aeros end
 			}
 		};

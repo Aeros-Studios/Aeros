@@ -185,7 +185,8 @@ class TimingsExport extends Thread {
 				createObject(pair("spigot", mapAsJSON(Bukkit.spigot().getSpigotConfig(), null)),
 						pair("bukkit", mapAsJSON(Bukkit.spigot().getBukkitConfig(), null)),
 						pair("paperspigot", mapAsJSON(Bukkit.spigot().getPaperSpigotConfig(), null)),
-						 pair("windspigot", mapAsJSON(Bukkit.spigot().getAerosConfig(), null)))); // Aeros - add configuration to timings
+						pair("aeros", mapAsJSON(Bukkit.spigot().getAerosConfig(), null)))); // Aeros - add configuration
+																							// to timings
 
 		new TimingsExport(sender, parent, history).start();
 	}

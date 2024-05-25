@@ -46,7 +46,7 @@ public class AerosConfig {
 			config.load(CONFIG_FILE);
 		} catch (IOException ignored) {
 		} catch (InvalidConfigurationException ex) {
-			LOGGER.log(Level.ERROR, "Could not load windspigot.yml, please correct your syntax errors", ex);
+			LOGGER.log(Level.ERROR, "Could not load aeros.yml, please correct your syntax errors", ex);
 			throw Throwables.propagate(ex);
 		}
 		config.options().copyDefaults(true);
@@ -66,7 +66,7 @@ public class AerosConfig {
 		 * AerosConfig.class);
 		 * LOGGER.info("Successfully loaded nacho.yml into memory!");
 		 * LOGGER.
-		 * warn("Loading of nacho.yml will be removed in the future, so transfer the config options into windspigot.yml, then delete nacho.yml"
+		 * warn("Loading of nacho.yml will be removed in the future, so transfer the config options into aeros.yml, then delete nacho.yml"
 		 * );
 		 * makeReadable();
 		 * }
@@ -80,7 +80,7 @@ public class AerosConfig {
 			LOGGER.log(Level.ERROR, "Could not save " + CONFIG_FILE, ex);
 
 			LOGGER.warn(
-					"Please regenerate your windspigot.yml file to prevent this issue! The server will run with the default config for now.");
+					"Please regenerate your aeros.yml file to prevent this issue! The server will run with the default config for now.");
 
 			makeReadable();
 		}
@@ -133,7 +133,7 @@ public class AerosConfig {
 		c.addComment("settings.thread-affinity",
 				"Only switch to true if your OS is properly configured!! (See https://github.com/OpenHFT/Java-Thread-Affinity#isolcpus) \nWhen properly configured on the OS this allocates an entire cpu core to the server, it improves performance but uses more cpu.");
 		c.addComment("settings.command.mob-ai",
-				"Enables the command \"/mobai\" which toggles mob ai. Users require the permission windspigot.command.mobai");
+				"Enables the command \"/mobai\" which toggles mob ai. Users require the permission aeros.command.mobai");
 		c.addComment("settings.limited-mob-spawns",
 				"Disables mob spawning if TPS is lower than the specified threshold.");
 		c.addComment("settings.limited-mob-spawns-threshold",
@@ -147,7 +147,7 @@ public class AerosConfig {
 		c.addComment("settings.async.knockback",
 				"Enables asynchronous knockback. This increases overall cpu usage, but sends knockback packets faster. Disable this if you do not run a pvp server. \nThis may be incompatible with a few plugins that listen to knockback packets. Test before using in production.");
 		c.addComment("settings.command.ping.enable",
-				"Enables the command \"/ping <player>\" which shows player ping. Users require the permission windspigot.command.ping");
+				"Enables the command \"/ping <player>\" which shows player ping. Users require the permission aeros.command.ping");
 		c.addComment("settings.command.ping.self-ping-msg", "The message displayed for the /ping command");
 		c.addComment("settings.command.ping.other-ping-msg", "The message displayed for the /ping <player> command");
 		c.addComment("settings.statistics",

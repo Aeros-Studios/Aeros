@@ -16,7 +16,7 @@ public class SetMaxSlotCommand extends Command {
 		this.description = "Set the max slots for the server";
 		this.usageMessage = "/sms [amount]";
 		this.setAliases(Arrays.asList("smp", "setslots"));
-		setPermission("windspigot.command.sms");
+		setPermission("aeros.command.sms");
 	}
 
 	public boolean execute(CommandSender sender, String commandLabel, String[] args) {

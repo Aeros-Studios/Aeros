@@ -16,7 +16,7 @@ public class MobAICommand extends Command {
 		super(name);
 		this.description = "Toggles Mob AI";
 		this.usageMessage = "/mobai";
-		this.setPermission("windspigot.command.mobai");
+		this.setPermission("aeros.command.mobai");
 	}
 
 	@Override
